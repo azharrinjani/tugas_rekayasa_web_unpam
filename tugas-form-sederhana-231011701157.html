@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran Newsletter</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e0e0e0;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #555;
+      }
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        transition: all 0.3s ease;
+        font-size: 16px;
+        color: #333;
+      }
+      input[type="text"]:focus,
+      input[type="email"]:focus {
+        border-color: #007bff;
+        background-color: #fff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+      }
+      button {
+        width: 100%;
+        padding: 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      input:hover {
+        border-color: #007bff;
+      }
+
+      @media (max-width: 1024px) {
+        .container {
+          max-width: 80%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          max-width: 95%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Pendaftaran Newsletter</h2>
+      <form id="newsletterForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required />
+
+        <button type="submit">Daftar</button>
+      </form>
+    </div>
+
+    <script src="alert1.js"></script>
+  </body>
+</html>

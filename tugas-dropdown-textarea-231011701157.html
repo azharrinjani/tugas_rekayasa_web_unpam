@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Feedback Pelanggan</title>
+    <style>
+      /* Azhar Rinjani */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+      }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-size: 16px;
+        color: #555;
+      }
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 16px;
+        color: #333;
+        box-sizing: border-box;
+        background-color: #f8f8f8;
+      }
+      textarea {
+        resize: vertical;
+        height: 150px;
+      }
+      select:focus,
+      textarea:focus {
+        border-color: #007bff;
+        background-color: #fff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Feedback Pelanggan</h2>
+      <form id="feedbackForm">
+        <label for="topic">Topik Feedback:</label>
+        <select id="topic" name="topic" required>
+          <option value="">-- Pilih Topik --</option>
+          <option value="Pelayanan">Pelayanan</option>
+          <option value="Produk">Produk</option>
+          <option value="Lainnya">Lainnya</option>
+        </select>
+
+        <label for="feedback">Detail Feedback:</label>
+        <textarea id="feedback" name="feedback" placeholder="Tuliskan feedback Anda di sini..." required></textarea>
+
+        <button type="submit">Kirim Feedback</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
